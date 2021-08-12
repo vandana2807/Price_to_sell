@@ -7,8 +7,8 @@ To determine the outliers:
   2. Create a list of prices of other homes of the same size. It will be called compList in the examples. 
   3. If there are no other homes of the same size, the house being tested is not an outlier
   4. Otherwise: 
-              • Calculate the mean price, Pm and the standard deviation, o, for the homes compList. o
-              • lf price[i] - Pm /> 3* o, the house is an outlier.
+              * Calculate the mean price, Pm and the standard deviation, o, for the homes compList. o
+              * lf price[i] - Pm /> 3* o, the house is an outlier.
               
 The valuation is then calculated against the resulting list using the following rules: 
 1. If there are no houses in the list, use 1000 per square foot as the price.
