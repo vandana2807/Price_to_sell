@@ -18,7 +18,7 @@ The valuation is then calculated against the resulting list using the following 
 4. If the required square footage is between the square footage of two houses in the list, interpolate the square foot price using the means of the closest higher and lower priced homes.
 5. If the required square footage is outside of the range of houses listed, extrapolate the price based on the means of the two square footage values that are closest to the home to value.
 
-In all cases, if the final price is less than 103 or greater than 106, the price will be 103 and 106, respectively. For any square footage, the square foot price is the mean of the prices at that square footage. Return an integer that represents the valuation of the seller's house. 
+In all cases, if the final price is less than 10^3 or greater than 10^6, the price will be 10^3 and 10^6, respectively. For any square footage, the square foot price is the mean of the prices at that square footage. Return an integer that represents the valuation of the seller's house. 
 
 
 # solution
@@ -27,4 +27,4 @@ Function starts with finding duplicates of each element in area list if there ar
 if there are duplicates in area list then we take the mean of prices of those duplicates area in a cmplist, find the mean and standard deviation of it
 if mod of difference between price and mean price is less than 3 times standard deviation add it to final list
 
-Once we get the final list add the necessary rules 
+Once we get the final list add the necessary rules to find the price
