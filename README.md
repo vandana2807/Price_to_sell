@@ -20,10 +20,3 @@ The valuation is then calculated against the resulting list using the following 
 
 In all cases, if the final price is less than 103 or greater than 106, the price will be 103 and 106, respectively. For any square footage, the square foot price is the mean of the prices at that square footage. Return an integer that represents the valuation of the seller's house. 
 
-Complete the 'valuation' function below. 
-* The function is expected to return a LONG_INTEGER. 
-* The function accepts following parameters: 
-   1. LONG_INTEGER reqArea 
-   2. LONG_INTEGER_ARRAY area 
-   3. LONG_INTEGER_ARRAY price 
-function valuation (reqArea, area, price)
