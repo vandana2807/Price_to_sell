@@ -3,10 +3,10 @@ A real estate agent is advising a seller on the price to ask for a home. To do t
 
 The agent starts by removing any outliers from the list of comparable homes. 
 To determine the outliers:  
-  • Select the home to test. 
-  • Create a list of prices of other homes of the same size. It will be called compList in the examples. 
-  •  If there are no other homes of the same size, the house being tested is not an outlier
-  • Otherwise: 
+  1. Select the home to test.
+  2. Create a list of prices of other homes of the same size. It will be called compList in the examples. 
+  3. If there are no other homes of the same size, the house being tested is not an outlier
+  4. Otherwise: 
               • Calculate the mean price, Pm and the standard deviation, o, for the homes compList. o
               • lf price[i] - Pm /> 3* o, the house is an outlier.
               
