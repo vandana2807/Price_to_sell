@@ -11,11 +11,11 @@ To determine the outliers:
               • lf price[i] - Pm /> 3* o, the house is an outlier.
               
 The valuation is then calculated against the resulting list using the following rules: 
-• If there are no houses in the list, use 1000 per square foot as the price.
-• If there is only 1 house in the list, its square foot price is used.
-• If there are 1 or more houses in the list with the exact square footage of the house to price, use the mean of those prices.
-• If the required square footage is between the square footage of two houses in the list, interpolate the square foot price using the means of the closest higher and lower priced homes.
-• If the required square footage is outside of the range of houses listed, extrapolate the price based on the means of the two square footage values that are closest to the home to value.
+1. If there are no houses in the list, use 1000 per square foot as the price.
+2. If there is only 1 house in the list, its square foot price is used.
+3. If there are 1 or more houses in the list with the exact square footage of the house to price, use the mean of those prices.
+4. If the required square footage is between the square footage of two houses in the list, interpolate the square foot price using the means of the closest higher and lower priced homes.
+5. If the required square footage is outside of the range of houses listed, extrapolate the price based on the means of the two square footage values that are closest to the home to value.
 
 In all cases, if the final price is less than 103 or greater than 106, the price will be 103 and 106, respectively. For any square footage, the square foot price is the mean of the prices at that square footage. Return an integer that represents the valuation of the seller's house. 
 
